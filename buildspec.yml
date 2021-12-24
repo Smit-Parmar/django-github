@@ -6,9 +6,9 @@ phases:
       python: 3.8
     commands:
       # Install dependencies needed for running tests
+      - sudo yum install sqlite-3.8.11-1.fc21.x86_64.rpm
       - python3 -m pip install --upgrade pip
       - python3 -m pip install -r requirements.txt
-      - python3 -m pip install –upgrade Django==2.1
 
   pre_build:
     commands:
